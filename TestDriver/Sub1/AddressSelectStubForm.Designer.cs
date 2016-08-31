@@ -1,6 +1,6 @@
-﻿namespace App1.Sub1
+﻿namespace TestDriver.Sub1
 {
-    partial class ListForm
+    partial class AddressSelectStubForm
     {
         /// <summary>
         /// Required designer variable.
@@ -39,19 +39,19 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 21;
-            this.dataGridView1.Size = new System.Drawing.Size(605, 359);
+            this.dataGridView1.Size = new System.Drawing.Size(553, 195);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
             // 
-            // ListForm
+            // AddressSelectStubForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(605, 359);
+            this.ClientSize = new System.Drawing.Size(553, 195);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "ListForm";
-            this.Text = "一覧";
-            this.Load += new System.EventHandler(this.ListForm_Load);
+            this.Name = "AddressSelectStubForm";
+            this.Text = "AddressSelectStubForm";
+            this.Load += new System.EventHandler(this.AddressSelectFrom_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

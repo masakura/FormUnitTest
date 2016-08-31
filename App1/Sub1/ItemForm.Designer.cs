@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.nameInput = new System.Windows.Forms.TextBox();
             this.postalCodeInput = new System.Windows.Forms.TextBox();
             this.prefectureInput = new System.Windows.Forms.TextBox();
             this.cityInput = new System.Windows.Forms.TextBox();
@@ -45,12 +45,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // nameInput
             // 
-            this.textBox1.Location = new System.Drawing.Point(140, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 19);
-            this.textBox1.TabIndex = 0;
+            this.nameInput.Location = new System.Drawing.Point(140, 13);
+            this.nameInput.Name = "nameInput";
+            this.nameInput.Size = new System.Drawing.Size(100, 19);
+            this.nameInput.TabIndex = 0;
             // 
             // postalCodeInput
             // 
@@ -191,9 +191,10 @@
             this.Controls.Add(this.cityInput);
             this.Controls.Add(this.prefectureInput);
             this.Controls.Add(this.postalCodeInput);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.nameInput);
             this.Name = "ItemForm";
             this.Text = "詳細";
+            this.Load += new System.EventHandler(this.ItemForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,7 +202,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox nameInput;
         private System.Windows.Forms.TextBox postalCodeInput;
         private System.Windows.Forms.TextBox prefectureInput;
         private System.Windows.Forms.TextBox cityInput;
